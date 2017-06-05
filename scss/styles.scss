@@ -1,0 +1,42 @@
+//------------------
+//  Colour pattern
+//------------------
+$text: #111111;
+$main: #12AFAF;
+$secondary: #009500;
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $text;
+}
+
+.head {
+  background: $text;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+.head .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.head .logo img {
+  width: 150px;
+  height: auto;
+}
+
+.menu-button,
+.search-button {
+  border: 0;
+  font-size: 2rem;
+  margin: O;
+  padding: 0 0.5rem;
+  background: transparent;
+  color: #fff;
+}

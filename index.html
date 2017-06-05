@@ -7,30 +7,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <section class="welcome">
-    <header class="head" role="banner">
-      <a href="index.html">
-        <img src="images/logo.svg" alt="site logo">
-      </a>
-      <button type="button" class="menu-button">menu</button>
-      <button type="button" class="search-button">search</button>
-      <form action="#" id="search-tool">
-        <div class="search-tool-container">
-          <input type="text" placeholder="search...">
-          <input type="submit" value="search">
-        </div>
-      </form>
-      <nav id="main-menu">
-        <ul>
-          <li class="active"><a href="index.html">Inicio</a></li>
-          <li><a href="index.html">Nosotros</a></li>
-          <li><a href="index.html">Servicios</a></li>
-          <li><a href="index.html">Contacto</a></li>
-        </ul>
-      </nav>
+
+    <header class="head navbar-fixed-top" role="banner">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="site logo">
+        </a>
+        <button type="button" class="search-button">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="menu-button">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <form action="#" id="search-tool">
+          <div class="search-tool-container">
+            <input type="text" placeholder="search...">
+            <input type="submit" value="search">
+          </div>
+        </form>
+        <nav id="main-menu">
+          <ul>
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="index.html">Servicios</a></li>
+            <li><a href="index.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="site-title">
@@ -125,7 +135,7 @@
   </footer>
   <a href="scroll-up">Arriba</a>
 
-  <script src="js/jquery-3.2.1.min.je"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
 
