@@ -35,8 +35,68 @@ body {
 .search-button {
   border: 0;
   font-size: 2rem;
-  margin: O;
+  margin: 0;
   padding: 0 0.5rem;
   background: transparent;
   color: #fff;
+}
+/*trick : margin-left auto propety displays both icons on the right hand side of the nav
+beacause the search button fills the whole left margin*/
+.search-button {
+  margin-left: auto;
+  margin-right: 0.8rem;
+}
+
+.menu-button:focus,
+.search-button:focus {
+  outline: 0;
+}
+/* inputs parent will take the flex property*/
+.search-tool-container {
+  display: flex;
+  height: 3rem;
+  margin: 1rem 0;
+}
+
+#search-tool {
+  flex: 1 1 100%;
+}
+
+.search-tool-container input[type="text"] {
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  padding: 1rem;
+}
+
+.search-tool-container input[type="submit"] {
+  flex: 1 1 auto;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  background: $main;
+  color: #fff;
+}
+
+#main-menu {
+  flex: 1 1 100%;
+}
+
+#main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+#main-menu ul a {
+  display: block;
+  text-align: center;
+  padding: 0.8rem 0;
+  color: #fff;
+  text-transform: uppercase;
+  border-top: 1px solid #8c8888;
+  text-decoration: none;
+}
+
+#main-menu ul a:hover,
+#main-menu ul li.active a {
+  color: $main;
 }
