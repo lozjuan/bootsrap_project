@@ -9,7 +9,9 @@ body {
   background: url("../images/head-background.jpg") no-repeat center top;
   color: #fff;
   height: 100vh;
-  background-size: cover; }
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
 
 .head {
   background: #111111;
@@ -98,5 +100,25 @@ beacause the search button fills the whole left margin*/
 .btn-primary:hover {
   background-color: #009500;
   border-color: transparent; }
+
+.scroll-down a {
+  display: inline-block;
+  color: #fff;
+  font-size: 4rem;
+  animation: scroll-down-animation 2s ease-in-out infinite; }
+
+.site-title {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center; }
+
+/*animates the scroll-down*/
+@keyframes scroll-down-animation {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(6px); }
+  to {
+    transform: translateY(0); } }
 
 /*# sourceMappingURL=style.css.map */
