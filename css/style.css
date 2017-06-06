@@ -5,6 +5,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #111111; }
 
+.welcome {
+  background: url("../images/head-background.jpg") no-repeat center top;
+  color: #fff;
+  height: 100vh;
+  background-size: cover; }
+
 .head {
   background: #111111;
   color: #fff;
@@ -79,5 +85,18 @@ beacause the search button fills the whole left margin*/
 #main-menu ul a:hover,
 #main-menu ul li.active a {
   color: #12AFAF; }
+
+.btn-primary {
+  transition: all 0.5s;
+  color: #fff;
+  background-color: #12AFAF;
+  border-color: transparent;
+  margin-top: 1rem; }
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #009500;
+  border-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
