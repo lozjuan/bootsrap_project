@@ -120,5 +120,14 @@ beacause the search button fills the whole left margin*/
     transform: translateY(6px); }
   to {
     transform: translateY(0); } }
+/*Agency section*/
+.agency {
+  background-color: #12AFAF;
+  color: #fff; }
+
+.agency img {
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
