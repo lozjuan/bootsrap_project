@@ -150,13 +150,49 @@ beacause the search button fills the whole left margin*/
 .best-choice ul li .contenedor-eleccion h4 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: .8rem; }
+  margin-top: 0.8rem; }
 
 .best-choice ul li {
   min-height: 9rem; }
 
 /*services section*/
 .services {
-  background: url("../images/traveler.jpg") no-repeat center top; }
+  background: url("../images/traveler.jpg") no-repeat center top;
+  background-size: cover;
+  color: #fff; }
+
+.services article {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0; }
+
+.services img {
+  flex: 0 0 60px;
+  overflow: hidden;
+  margin-right: 1rem; }
+
+.services article {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0; }
+
+.services h3 {
+  flex: 1 1 auto;
+  margin: 0;
+  font-size: 1.1rem; }
+
+.services h3 a {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none; }
+
+.services h3 a::after {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-size: 2rem;
+  margin-left: 1rem;
+  opacity: .5; }
 
 /*# sourceMappingURL=style.css.map */
