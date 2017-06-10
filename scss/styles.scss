@@ -216,13 +216,13 @@ beacause the search button fills the whole left margin*/
   margin: 1rem 0;
 }
 
-.services h3{
-  flex:  1 1 auto;
+.services h3 {
+  flex: 1 1 auto;
   margin: 0;
   font-size: 1.1rem;
 }
 
-.services h3 a{
+.services h3 a {
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -230,10 +230,19 @@ beacause the search button fills the whole left margin*/
   text-decoration: none;
 }
 
-.services h3 a::after{
+.services h3 a::after {
   content: "\f054";
   font-family: FontAwesome;
   font-size: 2rem;
   margin-left: 1rem;
-  opacity: .5;
+  opacity: 0.5;
+  position: relative;
+  left: 0;
+  transition: all .5s ease;
+}
+
+.services h3 a:hover::after {
+  left: -.5rem;
+  opacity: 1;
+  color: $main;
 }
