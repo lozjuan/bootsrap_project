@@ -75,6 +75,7 @@ beacause the search button fills the whole left margin*/
   border: 0;
   border-radius: 5px 0 0 5px;
   padding: 1rem;
+  flex: 1 1 auto;
 }
 
 .search-tool-container input[type="submit"] {
@@ -83,6 +84,8 @@ beacause the search button fills the whole left margin*/
   border-radius: 0 5px 5px 0;
   background: $main;
   color: #fff;
+  flex: 0 1 auto;
+  padding: 0 1rem;
 }
 
 #main-menu {
@@ -238,11 +241,94 @@ beacause the search button fills the whole left margin*/
   opacity: 0.5;
   position: relative;
   left: 0;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .services h3 a:hover::after {
   left: -.5rem;
   opacity: 1;
   color: $main;
+}
+/*projects section*/
+.project a {
+  text-decoration: none;
+}
+
+.project a h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: $text;
+}
+
+.project .container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project .owl-nav {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  margin: 0.3rem 0;
+}
+
+.project .owl-next,
+.project .owl-prev {
+  font-size: 3rem;
+  margin: 0 0.5rem;
+  color: $main;
+  transition: all 0.5s ease;
+}
+
+.project .owl-next:hover,
+.project .owl-prev:hover {
+  color: $secondary;
+}
+/*footer*/
+.footer {
+  background: $text;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer .social-network {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .social-network a {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  color: #fff;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+
+.footer .social-network a:hover {
+  opacity: 1;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: $main;
+  text-decoration: none;
+  z-index: 99999;
+  line-height: 0;
+}
+
+.scroll-up:hover,
+.scroll-up:focus{
+  outline: 0;
+  text-decoration: none;
+  color: #fff;
 }
