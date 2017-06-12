@@ -326,9 +326,139 @@ beacause the search button fills the whole left margin*/
   line-height: 0;
 }
 
-.scroll-up:hover,
-.scroll-up:focus{
+.scroll-up:focus,
+.scroll-up:hover {
   outline: 0;
   text-decoration: none;
   color: #fff;
+}
+/*Media Queries md size*/
+@media (min-width:768px) {
+  #main-menu {
+    height: auto !important;
+    display: block;
+    flex: 0 1 auto;
+    order: 1;
+    margin-left: auto;
+  }
+
+  #main-menu ul {
+    display: flex;
+  }
+
+  #main-menu ul a {
+    border-top: 0;
+    margin: 0;
+  }
+
+  #main-menu ul li a {
+    padding: 0.8rem;
+    text-transform: capitalize;
+    margin: 0 0.3rem;
+    border-bottom: 4px solid transparent;
+    transition: all 0.5s ease;
+  }
+
+  #main-menu ul li a:hover,
+  #main-menu ul li.active a {
+    color: $main;
+    border-bottom: 4px solid;
+  }
+
+  #search-tool {
+    order: 3;
+    position: absolute;
+    width: 25rem;
+    right: 3rem;
+    top: 3rem;
+    transition: all 0.5s ease;
+  }
+
+  .search-button {
+    margin-left: 1rem;
+    order: 2;
+    margin-right: 0;
+  }
+  /*services section*/
+  .services article {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services img {
+    flex: 0 0 160px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    transition: all 1s ease;
+  }
+
+  .services article:hover img {
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+  }
+
+  .services h3 a::after {
+    display: none;
+  }
+
+  .services h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    flex: 0 1 auto;
+  }
+  /*fix IE view*/
+  .services h3 a {
+    display: block;
+    width: 100%;
+  }
+  /*fix IE view*/
+  .services p {
+    width: 100%;
+  }
+
+  .services .btn-secondary {
+    margin-top: auto;
+  }
+}
+@media (min-width:992px) {
+  html {
+    font-size: 16px;
+  }
+
+  .best-choice ul li {
+    display: flex;
+    min-height: 7rem;
+  }
+
+  .best-choice ul li .fa {
+    text-align: center;
+    flex: 0 1 auto;
+    margin-right: 1rem;
+    transition: all 1s ease;
+  }
+
+  .best-choice ul li .fa:hover {
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+    background: $main;
+  }
+
+  .contenedor-eleccion {
+    flex: 1 0 0;
+  }
+
+  .best-choice ul li .contenedor-eleccion h4 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .best-choice ul:first-child .fa {
+    margin-left: 1rem;
+    order: 1;
+    margin-right: 0;
+  }
+
+  .best-choice ul li p {
+    font-size: 0.85rem;
+  }
 }
