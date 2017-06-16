@@ -332,6 +332,54 @@ beacause the search button fills the whole left margin*/
   text-decoration: none;
   color: #fff;
 }
+/*Nosotros page*/
+.section-page .welcome {
+  height: 50vh;
+}
+
+.section-page .route {
+  background: $main;
+  color: #fff;
+}
+
+.section-page .route a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.section-page .route a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.section-page .mb-0 {
+  font-size: 1.2rem;
+}
+
+.section-page .mb-0 a {
+  background: $main;
+  color: #fff;
+  display: block;
+  padding: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+.section-page .mb-0 a:hover {
+  background: $secondary;
+  color: #fff;
+
+}
+
+.section-page .card-header {
+  background: transparent;
+  border-bottom: none;
+}
+
+.section-page .card {
+  border: 0;
+}
 /*Media Queries md size*/
 @media (min-width:768px) {
   #main-menu {
