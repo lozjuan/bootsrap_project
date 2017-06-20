@@ -113,13 +113,15 @@ beacause the search button fills the whole left margin*/
 #main-menu ul li.active a {
   color: #12AFAF; }
 
+.site-title .btn-primary {
+  margin-top: 1rem; }
+
 .btn-primary {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #fff;
   background-color: #12AFAF;
-  border-color: transparent;
-  margin-top: 1rem; }
+  border-color: transparent; }
 
 .btn-primary:active,
 .btn-primary:focus,
@@ -377,8 +379,8 @@ beacause the search button fills the whole left margin*/
   padding: 1rem;
   border-radius: 5px;
   text-decoration: none;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .section-page .mb-0 a:hover {
   background: #009500;
@@ -391,7 +393,34 @@ beacause the search button fills the whole left margin*/
 .section-page .card {
   border: 0; }
 
+/*Services page*/
+.section-page .services-list {
+  background: #009500; }
+
+.services-list .services-item {
+  background: #fff;
+  text-align: center;
+  border: 5px solid green;
+  margin-bottom: 1rem;
+  padding: 1rem; }
+
+.services-item .fa {
+  font-size: 6rem;
+  color: #12AFAF;
+  margin-bottom: 1rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.services-item:hover .fa {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
 /*Media Queries md size*/
+@media (max-width: 575px) {
+  .head .container {
+    min-width: 100%; } }
 @media (min-width: 768px) {
   #main-menu {
     height: auto !important;
@@ -487,6 +516,24 @@ beacause the search button fills the whole left margin*/
     width: 100%; }
 
   .services .btn-secondary {
+    margin-top: auto; }
+
+  /*services page*/
+  .services-list .col-md-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .services-list .col-md-4 .services-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .services-list .col-md-4 .btn-primary {
     margin-top: auto; } }
 @media (min-width: 992px) {
   html {

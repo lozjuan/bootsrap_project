@@ -113,12 +113,15 @@ beacause the search button fills the whole left margin*/
   color: $main;
 }
 
+.site-title .btn-primary {
+  margin-top: 1rem;
+}
+
 .btn-primary {
   transition: all 0.5s;
   color: #fff;
   background-color: $main;
   border-color: transparent;
-  margin-top: 1rem;
 }
 
 .btn-primary:active,
@@ -363,13 +366,12 @@ beacause the search button fills the whole left margin*/
   padding: 1rem;
   border-radius: 5px;
   text-decoration: none;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .section-page .mb-0 a:hover {
   background: $secondary;
   color: #fff;
-
 }
 
 .section-page .card-header {
@@ -380,7 +382,36 @@ beacause the search button fills the whole left margin*/
 .section-page .card {
   border: 0;
 }
+/*Services page*/
+.section-page .services-list {
+  background: $secondary;
+}
+
+.services-list .services-item {
+  background: #fff;
+  text-align: center;
+  border: 5px solid green;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.services-item .fa {
+  font-size: 6rem;
+  color: $main;
+  margin-bottom: 1rem;
+  transition: all 1s ease;
+}
+
+.services-item:hover .fa {
+  transform: rotateY(360deg);
+  transform-style: preserve-3d;
+}
 /*Media Queries md size*/
+@media (max-width:575px) {
+  .head .container {
+    min-width: 100%;
+  }
+}
 @media (min-width:768px) {
   #main-menu {
     height: auto !important;
@@ -465,6 +496,19 @@ beacause the search button fills the whole left margin*/
   }
 
   .services .btn-secondary {
+    margin-top: auto;
+  }
+  /*services page*/
+  .services-list .col-md-4 {
+    display: flex;
+  }
+
+  .services-list .col-md-4 .services-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-list .col-md-4 .btn-primary {
     margin-top: auto;
   }
 }
