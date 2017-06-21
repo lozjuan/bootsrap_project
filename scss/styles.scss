@@ -11,7 +11,8 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: $text;
+s-serif;
+$text:color
 }
 
 .welcome {
@@ -21,12 +22,19 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  background-attachment: fixed !important;
 }
 
 .head {
   background: $text;
   color: #fff;
   padding: 0.5rem 0;
+  transition: all .5s ease;
+}
+
+.head.navbar-background {
+  background: #064e4e;
+  padding: 1rem 0;
 }
 
 .head .container {
@@ -202,6 +210,7 @@ beacause the search button fills the whole left margin*/
   background: url("../images/traveler.jpg") no-repeat center top;
   background-size: cover;
   color: #fff;
+  background-attachment: fixed !important;
 }
 
 .services article {
@@ -327,6 +336,7 @@ beacause the search button fills the whole left margin*/
   text-decoration: none;
   z-index: 99999;
   line-height: 0;
+  display: none;
 }
 
 .scroll-up:focus,
